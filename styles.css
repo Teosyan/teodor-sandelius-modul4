@@ -1,0 +1,408 @@
+body {
+
+    color: rgb(238, 238, 238);
+    background-color: #506160;
+}
+
+.bilder-top {
+    display: flex;
+}
+
+.logga {
+    object-fit: cover;
+    width: 15%;
+    min-width: 150px;
+    height: 150px;
+}
+
+.fiskstugor {
+    object-fit: cover;
+    width: 85%;
+    height: 150px;
+}
+
+nav {
+    margin: 50px;
+    display: flex;
+    background-color: rgb(37, 37, 37);
+    height: 80px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a {
+    color: white;
+}
+
+.hamburgarmenyn {
+    display: none;
+    cursor: pointer;
+}
+
+
+.stycke-section {
+    gap: 40px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.stycke {
+    overflow: auto;
+    padding: 15px;
+    display: flex;
+    flex: 1 1 300px;
+    height: 300px;
+    background-color: #242424;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin: 50px;
+    display: flex;
+    background-color: rgb(37, 37, 37);
+    height: 80px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.valkommen-rubrik {
+    width: 100%;
+}
+
+.hojdpunkter-rubrik {
+    width: 100%;
+}
+
+.stycke p,
+.stycke ul {
+    width: 100%;
+    box-sizing: border-box;
+
+    max-width: 75ch;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 40px 0;
+}
+
+
+
+.bokning-section {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+    max-width: 90vw;
+}
+
+.bokning-form,
+.boka-stuga {
+    background: #1c1c1c;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 500px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+
+
+.bokning-form label {
+    font-size: 14px;
+    display: block;
+}
+
+.bokning-form input {
+    width: 95%;
+    max-width: 470px;
+    height: 28px;
+    padding: 6px 8px;
+    box-sizing: border-box;
+}
+
+.bokning-form textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.bokning-form button,
+.skicka {
+    display: block;
+    margin: 15px auto 0;
+    padding: 8px 20px;
+    width: 120px;
+    background: #d1d1d1;
+    border-radius: 3px;
+}
+
+.boka-stuga img.stuga {
+    padding-top: 30%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.boka-stuga {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-content: start;
+}
+
+#stuga {
+    width: 95%;
+    max-width: 470px;
+    height: 28px;
+    padding: 6px 8px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.kontakt-section {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+    max-width: 90vw;
+}
+
+.kontakt-uppgifter {
+    background: #1c1c1c;
+    padding: 25px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    width: 530px;
+    max-height: 100%;
+    max-width: 90vw;
+    box-sizing: border-box;
+}
+
+.item-epost,
+.item-telefonnummer,
+.item-adress,
+.item-oppettider {
+    background: #6b6a6a;
+    padding: 25px;
+    text-align: center;
+    border-radius: 4px;
+    color: white;
+    min-width: 100px;
+}
+
+
+.two-item-epost,
+.two-item-telefonnummer,
+.two-item-adress,
+.two-item-oppettider {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: black;
+}
+
+.two-item-epost-text {
+    justify-self: center;
+}
+
+
+
+.two-item-epost-text,
+.two-item-telefonnummer-text,
+.two-item-adress-text,
+.two-item-oppettider-text {
+    font-size: 16px;
+    Margin: 40px;
+    word-break: break-word;
+    min-width: 15ch;
+}
+
+.kontakt-form {
+    background: #1c1c1c;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 500px;
+    box-sizing: border-box;
+    overflow: auto;
+    max-width: 90vw;
+}
+
+.kontakt-form label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    display: block;
+}
+
+
+.kontakt-form input {
+    width: 95%;
+    max-width: 470px;
+    height: 28px;
+    padding: 6px 8px;
+    box-sizing: border-box;
+}
+
+.kontakt-form textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+.hitta-hit {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.hitta-img,
+.hitta-text {
+    flex: 1 1 300px;
+    background-color: #242424;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.hitta-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.hitta-img iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.hitta-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hitta-text p {
+    max-width: 75ch;
+}
+
+
+
+
+
+@media (max-width: 430px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        display: none;
+        width: 100%;
+        padding: 1px 3px;
+        margin: 1px 0;
+        background-color: rgb(148, 143, 143);
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    nav a.active {
+        display: block;
+    }
+
+    .hamburgarmenyn {
+        display: block;
+        align-self: flex-end;
+        margin: 10px 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    .kontakt-uppgifter {
+        grid-template-columns: 1fr;
+    }
+
+    .two-item-epost-text,
+    .two-item-telefonnummer-text,
+    .two-item-adress-text,
+    .two-item-oppettider-text,
+    .footer {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .two-item-epost-text,
+    .two-item-telefonnummer-text,
+    .two-item-adress-text,
+    .two-item-oppettider-text,
+    .footer {
+        font-size: 10px;
+    }
+}

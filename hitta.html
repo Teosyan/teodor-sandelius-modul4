@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitta hit</title>
+    <meta name="description"
+        content="Hitta till Fårö Bo - vägbeskrivning, karta och tips för att ta sig till våra fiskestugor och hotell på Fårö, Gotland.">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="bilder-top">
+            <img class="logga" src="faro-bo-logga.webp" alt="Logga för hotellet Fårö Bo">
+            <img class="fiskstugor" src="faro-falt.webp" alt="Fiskstugor på Fårö">
+        </div>
+        <nav>
+            <a href="index.html">Välkommen</a>
+            <a href="boka.html">Boka</a>
+            <a href="hitta.html">Hitta</a>
+            <a href="kontakt.html">Kontakt</a>
+            <div class="hamburgarmenyn" id="hamburgarmenyn">&#9776;</div>
+            <script>
+                const hamburgarmenyn = document.querySelector('.hamburgarmenyn');
+                const navLinks = document.querySelectorAll('nav a');
+
+                hamburgarmenyn.addEventListener('click', () => {
+                    navLinks.forEach(link => link.classList.toggle('active'));
+                });
+            </script>
+        </nav>
+    </header>
+    <main>
+        <div class="hitta-hit">
+            <div class="hitta-img">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1761.8348006565848!2d19.1312583621072!3d57.98013959613154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46f6ec580de563e9%3A0xdbe7c5ce68f26cb7!2sHelgumannen%20fiskel%C3%A4ge!5e0!3m2!1ssv!2sse!4v1765910963578!5m2!1ssv!2sse"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <section class="hitta-text">
+                <h2>Hitta hit</h2>
+                <p> Följ den smala grusvägen norrut tills du ser den gamla enbusken som lutar sig mot vinden. Fortsätt
+                    rakt
+                    fram tills havet börjar skimra mellan tallarna. Efter några minuter delar sig vägen - ta stigen till
+                    vänster, den som leder mot doften av tång och salt. När du hör måsarna och känner vinden öppna upp
+                    kring
+                    dig, då vet du att du är framme vid Fårö Bo.</p>
+            </section>
+        </div>
+    </main>
+    <div class="footer">
+        <footer>
+            <div class="faro-bo">Fårö Bo</div>
+            <div class="strandvagen-1">Strandvägen 1</div>
+            <div class="12345-faro">12 345 Fårö</div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

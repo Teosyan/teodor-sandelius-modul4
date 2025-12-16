@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boka stuga</title>
+    <meta name="description"
+        content="Boka din vistelse hos Fårö Bo - välj stuga eller hotellrum och fyll i vårt bokningsformulär enkelt online.">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="bilder-top">
+            <img class="logga" src="faro-bo-logga.webp" alt="Logga för hotellet Fårö Bo">
+            <img class="fiskstugor" src="faro-falt.webp" alt="Fiskstugor på Fårö">
+        </div>
+        <nav>
+            <a href="index.html">Välkommen</a>
+            <a href="boka.html">Boka</a>
+            <a href="hitta.html">Hitta</a>
+            <a href="kontakt.html">Kontakt</a>
+            <div class="hamburgarmenyn" id="hamburgarmenyn">&#9776;</div>
+            <script>
+                const hamburgarmenyn = document.querySelector('.hamburgarmenyn');
+                const navLinks = document.querySelectorAll('nav a');
+
+                hamburgarmenyn.addEventListener('click', () => {
+                    navLinks.forEach(link => link.classList.toggle('active'));
+                });
+            </script>
+        </nav>
+    </header>
+    <main>
+        <div class="bokning-section">
+            <form class="bokning-form" action="https://httpbin.org/post" method="post">
+                <label for="fornamn">*Förnamn</label>
+                <input type="text" id="fornamn" name="fornamn" required><br>
+                <label for="efternamn">*Efternamn</label>
+                <input type="text" id="efternamn" name="efternamn" required><br>
+                <label for="e-post">*E-post</label>
+                <input type="email" id="e-post" name="e-post" required><br>
+                <label for="stuga">Stuga</label>
+                <select id="stuga" name="stuga">
+                    <option value="stuga-1">1</option>
+                    <option value="stuga-2">2</option>
+                    <option value="stuga-3">3</option>
+                    <option value="stuga-4">4</option>
+                    <option value="stuga-5">5</option>
+                    <option value="stuga-6">6</option>
+                </select><br>
+                <label for="ovrigt">Övrigt</label>
+                <textarea maxlength="400" id="ovrigt" name="ovrigt"></textarea>
+                <button type="submit" class="skicka">Skicka</button>
+            </form>
+
+            <div class="boka-stuga">
+                <img class="stuga" src="stuga-1.webp" alt="Bild på en brun fiskestuga utav trä">
+                <img class="stuga" src="stuga-2.webp" alt="Bild på en vit fiskestuga utav sten">
+                <img class="stuga" src="stuga-3.webp" alt="Bild på en ljusbrun fiskestuga utav trä">
+                <img class="stuga" src="stuga-4.webp" alt="Bild på en svart fiskestuga utav trä">
+                <img class="stuga" src="stuga-5.webp" alt="Bild på en ljusbrun fiskestuga utav trä">
+                <img class="stuga" src="stuga-6.webp" alt="Bild på en mörkbrun fiskestuga utav trä">
+            </div>
+        </div>
+    </main>
+    <div class="footer">
+        <footer>
+            <div class="faro-bo">Fårö Bo</div>
+            <div class="strandvagen-1">Strandvägen 1</div>
+            <div class="12345-faro">12 345 Fårö</div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

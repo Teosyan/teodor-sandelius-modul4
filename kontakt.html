@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <meta name="description"
+        content="Kontakta Fårö Bo - hitta våra kontaktuppgifter, öppettider och skicka ett meddelande via vårt kontaktformulär.">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="bilder-top">
+            <img class="logga" src="faro-bo-logga.webp" alt="Logga för hotellet Fårö Bo">
+            <img class="fiskstugor" src="faro-falt.webp" alt="Fiskstugor på Fårö">
+        </div>
+        <nav>
+            <a href="index.html">Välkommen</a>
+            <a href="boka.html">Boka</a>
+            <a href="hitta.html">Hitta</a>
+            <a href="kontakt.html">Kontakt</a>
+            <div class="hamburgarmenyn" id="hamburgarmenyn">&#9776;</div>
+            <script>
+                const hamburgarmenyn = document.querySelector('.hamburgarmenyn');
+                const navLinks = document.querySelectorAll('nav a');
+
+                hamburgarmenyn.addEventListener('click', () => {
+                    navLinks.forEach(link => link.classList.toggle('active'));
+                });
+            </script>
+        </nav>
+    </header>
+    <main>
+        <div class="kontakt-section">
+            <div class="kontakt-uppgifter">
+                <div class="item-epost">
+                    <div class="two-item-epost">E-post</div>
+                    <div class="two-item-epost-text">Fåröbo@fåröbo.se</div>
+                </div>
+                <div class="item-telefonnummer">
+                    <div class="two-item-telefonnummer">Telefonnummer</div>
+                    <div class="two-item-telefonnummer-text">12 456 789</div>
+                </div>
+                <div class="item-adress">
+                    <div class="two-item-adress">Adress</div>
+                    <div class="two-item-adress-text">Strandvägen 1 <br> 12 345 Fårö, Gotland</div>
+                </div>
+                <div class="item-oppettider">
+                    <div class="two-item-oppettider">Öppettider</div>
+                    <div class="two-item-oppettider-text">Mån-Fred: Stängt<br>Lördag: Stängt<br>Söndag: 09-10</div>
+                </div>
+            </div>
+            <div>
+                <form class="kontakt-form" action="https://httpbin.org/post" method="post">
+                    <label for="fornamn">*Förnamn</label>
+                    <input type="text" id="fornamn" name="fornamn" required><br>
+                    <label for="efternamn">*Efternamn</label>
+                    <input type="text" id="efternamn" name="efternamn" required><br>
+                    <label for="e-post">*E-post</label>
+                    <input type="email" id="e-post" name="e-post" required><br>
+                    <label for="arende">Ärende</label><br>
+                    <textarea maxlength="500" id="arende" name="arende" rows="30" cols="10"></textarea>
+                    <button type="submit" class="skicka">Skicka</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <div class="footer">
+        <footer>
+            <div class="faro-bo">Fårö Bo</div>
+            <div class="strandvagen-1">Strandvägen 1</div>
+            <div class="12345-faro">12 345 Fårö</div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

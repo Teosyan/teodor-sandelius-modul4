@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startsida Fårö Bo</title>
+    <meta name="description"
+        content="Fårö Bo - mysiga fiskestugor och hotellvistelser på Fårö, Gotland. Utforska våra boenden och boka direkt online.">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="bilder-top">
+            <img class="logga" src="faro-bo-logga.webp" alt="Logga för hotellet Fårö Bo">
+            <img class="fiskstugor" src="faro-falt.webp" alt="Fiskstugor på Fårö">
+        </div>
+        <nav>
+            <a href="index.html">Välkommen</a>
+            <a href="boka.html">Boka</a>
+            <a href="hitta.html">Hitta</a>
+            <a href="kontakt.html">Kontakt</a>
+            <div class="hamburgarmenyn" id="hamburgarmenyn">&#9776;</div>
+            <script>
+                const hamburgarmenyn = document.querySelector('.hamburgarmenyn');
+                const navLinks = document.querySelectorAll('nav a');
+
+                hamburgarmenyn.addEventListener('click', () => {
+                    navLinks.forEach(link => link.classList.toggle('active'));
+                });
+            </script>
+        </nav>
+    </header>
+    <main>
+        <div class="stycke-section">
+            <section class="stycke">
+                <h2 class="valkommen-rubrik">Välkommen till hotell Fårö Bo!</h2>
+                <p> Hos oss bor du nära naturen i våra charmiga frukoststugor, perfekta för en avkopplande start på
+                    dagen.
+                    Varje morgon väntar en nybryggd frukostkorg fylld med lokala smaker som du kan njuta av i lugn och
+                    ro -
+                    antingen på din veranda eller ute i den gotländska morgonsolen.
+                    Här får du tid att landa, andas och uppleva Fårös unika landskap med raukar, vindpinade tallar och
+                    gyllene stränder precis runt hörnet. Vi ser fram emot att ta hand om dig och göra din vistelse
+                    minnesvärd.
+                    Välkommen till ditt hem borta från hemmet.</p>
+            </section>
+            <section class="stycke">
+                <h2 class="hojdpunkter-rubrik">Höjdpunkter</h2>
+                <ul>
+                    <li>Strosa mellan de gamla sjöbodarna i Helgumannens fiskeläge</li>
+                    <li>Gå en kort promenad till de närliggande raukformationerna</li>
+                    <li>Sätt dig på en klippa och lyssna på vågorna - total stillhet</li>
+                    <li>Fotografera solnedgången över de karga stenstränderna</li>
+                    <li>Hitta ditt eget lilla vindskydd och njut av en picknick</li>
+                    <li>Känn på den gotländska kalkstenen och utforska strandens mönster</li>
+                    <li>Ta en långsam morgonpromenad när havsdimman ligger tät över stranden</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <div class="footer">
+        <footer>
+            <div class="faro-bo">Fårö Bo</div>
+            <div class="strandvagen-1">Strandvägen 1</div>
+            <div class="12345-faro">12 345 Fårö</div>
+        </footer>
+    </div>
+</body>
+
+</html>
